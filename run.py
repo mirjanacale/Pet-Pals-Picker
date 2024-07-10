@@ -120,7 +120,7 @@ def display_ascii(animal):
  /|  O|| O|        /      \_______________/        /
 | |___||__|      /       /                \          /
 |          \    /      /                    \          /
-|   (_______) /______/                        \_________ /
+|   (_______) /______/                        \ _________ /
 |         / /         \                      /            /
  \         \^||         \                  /               \     /
    \         ||           \______________/      _-_       //\__//
@@ -149,7 +149,7 @@ ___.....---"""        .       ""--..____
         "frog": '''
         
          o  o   o  o
-         |\/ \^/ \/|
+         |\ / \^/ \|
          |,-------.|
        ,-.(|)   (|),-.
        \_*._ ' '_.* _/
@@ -167,3 +167,38 @@ ___.....---"""        .       ""--..____
         '''
     } 
 print(ascii_art[animal])
+
+def find_animal():
+    answers = []
+
+    questions = [
+        ("What size of pet do you prefer?", ["Small", "Medium", "Large"]),
+        ("How much time can you spend with your pet daily?", ["A few minutes", "A few hours", "All day"]),
+        ("Do you prefer pets that are quiet or vocal?", ["Quiet", "Vocal"]),
+        ("How much space do you have for a pet?", ["A small space", "A medium space", "A large space"]),
+        ("Do you want a pet that's easy to care for?", ["Yes", "No"]),
+        ("Do you prefer a pet that stays in a cage or one that roams free?", ["Cage", "Free"]),
+        ("Are you okay with cleaning up after your pet?", ["Yes", "No"]),
+        ("Do you want a pet that can be trained?", ["Yes", "No"]),
+        ("Do you want a pet that lives a long time?", ["Yes", "No"]),
+        ("Do you want a pet that's active during the day or night?", ["Day", "Night"])
+    ]
+
+    for question, choices in questions:
+        answer = ask_question(question, choices)
+        answers.append(answer)
+         # return the answers ( map answers to specific pets)
+    return answers
+
+def main():
+    
+    
+    
+    
+    
+# answers = find_animal()
+# print(answers)
+# print(display_ascii("cat"))
+# print(display_ascii("snake"))
+
+
