@@ -1,3 +1,8 @@
+import colorama
+from colorama import Fore, Style
+
+colorama.init(autoreset=True)
+
 # Pet Pals Picker
 def display_ascii(animal):
      ascii_art = {
@@ -168,20 +173,45 @@ ___.....---"""        .       ""--..____
     } 
 print(ascii_art[animal])
 
+def ask_question(question, choices):
+    """
+    Asks a question to the user and returns their choice.
+
+    Args:
+        question (str): The question to ask the user.
+        choices (List[str]): The list of possible choices for the user.
+
+    Returns:
+        str: The chosen option from the list of choices.
+    """
+    
+    print(question)
+
+    # Loop through the choices and print them with an index
+    for idx, choice in enumerate(choices, 1):
+        print(f"{idx}. {choice}")
+
+    
+    answer = int(input("Choose an option: "))
+
+    return choices[answer - 1]
+
+
+
 def find_animal():
     answers = []
 
     questions = [
-        ("What size of pet do you prefer?", ["Small", "Medium", "Large"]),
-        ("How much time can you spend with your pet daily?", ["A few minutes", "A few hours", "All day"]),
-        ("Do you prefer pets that are quiet or vocal?", ["Quiet", "Vocal"]),
-        ("How much space do you have for a pet?", ["A small space", "A medium space", "A large space"]),
-        ("Do you want a pet that's easy to care for?", ["Yes", "No"]),
-        ("Do you prefer a pet that stays in a cage or one that roams free?", ["Cage", "Free"]),
-        ("Are you okay with cleaning up after your pet?", ["Yes", "No"]),
-        ("Do you want a pet that can be trained?", ["Yes", "No"]),
-        ("Do you want a pet that lives a long time?", ["Yes", "No"]),
-        ("Do you want a pet that's active during the day or night?", ["Day", "Night"])
+        ("How much room in your house is physically set aside for a pet? Think about how big your living space is, if you have a yard, and what other spaces your pet might use.Which pet size do you prefer?", ["Small", "Medium", "Large"]),
+        ("How much time can you actually dedicate to your pet's daily care and interaction? When responding, take into account your work schedule, social obligations, and personal downtime?", ["A few minutes", "A few hours", "All day"]),
+        ("Which type of pet would you rather have—one that is bubbly and lively all the time, or one that is more reserved and quiet? Consider how much noise you can handle and how it might impact your home.", ["Quiet", "Vocal"]),
+        ("How much room in your house is physically set aside for a pet? Consider the size of your living space, your yard's size, and any additional spaces the pet might use?", ["A small space", "A medium space", "A large space"]),
+        ("Are you looking for a pet that requires minimal effort to care for, or are you prepared to invest significant time and effort into its care and maintenance?", ["Yes", "No"]),
+        ("Which would you prefer—a pet that is free to roam your living area or one that is housed in a cage or other enclosure? Take into account your comfort level and any safety issues?", ["Cage", "Free"]),
+        ("Are you willing to regularly clean up after your pet, including tasks such as litter box maintenance, cleaning cages, and picking up waste?", ["Yes", "No"]),
+        ("Do you think it's important that your pet learn tricks, obey commands, or adopt certain behaviors? Consider the amount of time and energy you are prepared to devote to your training?", ["Yes", "No"]),
+        ("Do you want a pet that has a long lifespan, potentially providing many years of companionship, or are you looking for a shorter-term commitment?", ["Yes", "No"]),
+        ("Would you prefer a pet that is most active during the day when you are likely to be awake and available to interact, or one that is more active at night?", ["Day", "Night"])
     ]
 
     for question, choices in questions:
