@@ -188,7 +188,46 @@ def find_animal():
         answer = ask_question(question, choices)
         answers.append(answer)
          # return the answers ( map answers to specific pets)
-    return answers
+         
+   # Decision logic based on user answers
+    if answers[0] == "Small" and answers[1] == "A few minutes":
+        if answers[2] == "Quiet":
+            if answers[6] == "Yes":
+                return "fish", "A fish can be a great pet if you prefer a quiet, low-maintenance companion."
+            else:
+                return "frog", "A frog is a good choice for a quiet and minimal care pet."
+        else:
+            return "bird", "A bird can be a lively companion in a small space."
+    elif answers[0] == "Small" and answers[1] == "A few hours":
+        if answers[3] == "A small space":
+            if answers[7] == "Yes":
+                return "hamster", "A hamster is a small, low-maintenance pet that can provide entertainment."
+            else:
+                return "rabbit", "A rabbit can be a gentle pet if you have a bit more space and time."
+        else:
+            return "lizard", "A lizard is a good choice for a small space and moderate care needs."
+    elif answers[0] == "Medium":
+        if answers[4] == "Yes":
+            return "cat", "A cat can be a loving companion that is fairly independent."
+        else:
+            return "dog", "A dog can be a loyal and affectionate pet if you're willing to invest time in training."
+    elif answers[0] == "Large":
+        if answers[5] == "Free":
+            if answers[8] == "Yes":
+                return "snake", "A snake can be an intriguing pet that requires minimal interaction."
+            else:
+                return "turtle", "A turtle is a long-living pet that can be fascinating to observe."
+        else:
+            return None, "Sorry, there's no suitable pet recommendation based on your preferences."
+
+    return None, "Sorry, there's no suitable pet recommendation based on your preferences."
+       
+  
+  
+  
+  
+  
+  
 
 def main():
     
