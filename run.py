@@ -223,13 +223,28 @@ def find_animal():
     return None, "Sorry, there's no suitable pet recommendation based on your preferences."
        
   
-  
-  
-  
-  
-  
-
 def main():
+    """
+    The main function that runs the Animal Adoption Quiz.
+    """
+    # Print welcome message
+    print("Welcome to the Pet Pals Picker!")
+
+    # Find the best animal based on user answers
+    animal, description = find_animal()
+
+    # If an animal is found, display it and its description
+    if animal:
+        print(f"The best animal for you is a {animal}!")
+        print(description)
+        # Display ASCII art of the animal
+        display_ascii(animal)
+    else:
+        # If no suitable animal is found, display the description
+        print(description)
+        
+        
+
     
     
     
