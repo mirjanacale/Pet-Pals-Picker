@@ -102,11 +102,9 @@ def display_ascii(animal):
        |     |        
 {Style.RESET_ALL}        
         ''',
-        "hamster": 'f''
+      "hamster": f'''
         
 {Fore.MAGENTA}
-        
-    
      (q\_/p)
       /. .\.-""""-.      ___
      =\_t_/=    /  `\   (
@@ -117,7 +115,8 @@ def display_ascii(animal):
         
         
         ''',
-        "snake": '''
+        "snake": f'''
+{Fore.YELLOW}
         
            /^\/^|
          _|__|  O|
@@ -136,16 +135,25 @@ def display_ascii(animal):
           \      ~-____-~    _-~    ~-_    ~-_-~    /
             ~-_           _-~          ~-_       _-~
                ~--______-~                ~-___-~        
- 
+{Style.RESET_ALL}
         ''',
-        "turtle": '''
+        "turtle": f'''
+{Fore.GREEN}
+            ''',
+            "turtule": f'''
+{Fore.GREEN}
                     __
          .,-;-;-,. /'_\
        _/_/_/_|_\_\) /
      '-<_><_><_><_>=/\
       `/_/====/_/-'\_\
         ""     ""    ""        
-        
+{Style.RESET_ALL} 
+        ''', 
+        "lizard": f'''  
+{Fore.READ} 
+
+                            
      
  
         ''',
@@ -164,8 +172,14 @@ ___.....---"""        .       ""--..____
            \ \`-.__.-'/ /\|\|           .
           .'  `.    .'  `.
           |/\/\|    |/\/\|
+          
+{Style.RESET_ALL}
         ''',
-        "frog": '''
+        
+        "frog": f '''
+{Fore.GREEN}
+        
+
         
          o  o   o  o
          |\ / \^/ \|
@@ -181,8 +195,7 @@ ___.....---"""        .       ""--..____
     //| \\  `---'  // |\\
    /,-.,-.\       /,-.,-./
   o   o   o      o   o    o        
-        
- 
+{Style.RESET_ALL}
         '''
     } 
 print(ascii_art[animal])
