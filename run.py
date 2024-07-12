@@ -17,15 +17,12 @@ def display_title():
                                                                                                                                                               
     """
     print(Fore.CYAN + Style.BRIGHT + title + Style.RESET_ALL)
-
-
-
-
+    
 def display_ascii(animal):
-     ascii_art = {
-        "cat": '''
-        
-     
+    ascii_art = {
+        "cat": f'''
+{Fore.YELLOW} 
+   
  /|_,-~/|
  / _  _ |    ,--.
 (  @  @ )   / ,-'
@@ -35,16 +32,20 @@ def display_ascii(animal):
  \ \ ,  /      |
   || |-_\__   /
  ((_/`(____,-'      
-
+{Fore.RESIT_ALL}
         ''',
-        "dog": '''
+        "dog": f'''
+{Fore.RED}
+        
  / \__
 (    @\___
  /         O
- /   (_____/
-/_____/   U
+ /   (_____
+/_____/   U 
+{Style.RESIT_ALL}
         ''',
-        "fish": '''
+        "fish": F'''
+{Fore.CYAN}
         
        o                 o
                   o
@@ -59,10 +60,11 @@ def display_ascii(animal):
           \_ (      _/
             |  |___/
            /__/        
-        
+{Style.REST_ALL}
  
         ''',
-        "bird": '''
+        "bird": f'''
+{Fore.BLUE}
    (
   `-`-.
   '( @ >
@@ -70,10 +72,12 @@ def display_ascii(animal):
   /    )
  /_,'  / 
    \  / 
-===m""m===        
+===m""m===  
+{Style.RESET_ALL}      
  
         ''',
-        "rabbit": '''
+        "rabbit": F'''
+{Fore.GREEN}
         
   / |
     / _ |
@@ -96,19 +100,20 @@ def display_ascii(animal):
  \_____       _____/
        \     /
        |     |        
-        
-        
- 
+{Style.RESET_ALL}        
         ''',
-        "hamster": '''
+        "hamster": 'f''
+        
+{Fore.MAGENTA}
         
     
      (q\_/p)
       /. .\.-""""-.      ___
      =\_t_/=    /  `\   (
        )\ ))__ _\    |___)
-      nn-nn`  `nn---'        
-        
+      nn-nn`  `nn---'  
+            
+{Style.RESET_ALL}        
         
         
         ''',
@@ -134,22 +139,14 @@ def display_ascii(animal):
  
         ''',
         "turtle": '''
+                    __
+         .,-;-;-,. /'_\
+       _/_/_/_|_\_\) /
+     '-<_><_><_><_>=/\
+      `/_/====/_/-'\_\
+        ""     ""    ""        
         
-                             ___-------___
-                         _-~~             ~~-_
-                      _-~                    /~-_
-   /^\__/^\         /~  \                   /    /
- /|  O|| O|        /      \_______________/        /
-| |___||__|      /       /                \          /
-|          \    /      /                    \          /
-|   (_______) /______/                        \ _________ /
-|         / /         \                      /            /
- \         \^||         \                  /               \     /
-   \         ||           \______________/      _-_       //\__//
-     \       ||------_-~~-_ ------------- \ --/~   ~\    || __/
-       ~-----||====/~     |==================|       |/~~~~~
-        (_(__/  ./     /                    \_\      \.
-               (_(___/                         \_____)_)        
+     
  
         ''',
         "lizard": '''
@@ -289,6 +286,13 @@ def main():
     else:
         # If no suitable animal is found, display the description
         print(description)
+        
+        
+
+# Run the main function
+if __name__ == "__main__":
+    main()
+        
         
         
 
