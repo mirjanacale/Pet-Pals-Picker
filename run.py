@@ -3,7 +3,24 @@ from colorama import Fore, Style
 
 colorama.init(autoreset=True)
 
-# Pet Pals Picker
+# Function to display the title in ASCII art with color
+def display_title():
+    title = """
+    
+  _____  ______ _______            _____        _       _____            _____ _____ _____ _  ________ _____   
+ |  __ \|  ____|__   __|          |  __ \ /\   | |     / ____|          |  __ \_   _/ ____| |/ /  ____|  __ \  
+ | |__) | |__     | |     ______  | |__) /  \  | |    | (___    ______  | |__) || || |    | ' /| |__  | |__) | 
+ |  ___/|  __|    | |    |______| |  ___/ /\ \ | |     \___ \  |______| |  ___/ | || |    |  < |  __| |  _  /  
+ | |    | |____   | |             | |  / ____ \| |____ ____) |          | |    _| || |____| . \| |____| | \ \  
+ |_|    |______|  |_|             |_| /_/    \_\______|_____/           |_|   |_____\_____|_|\_\______|_|  \_\ 
+                                                                                                               
+                                                                                                                                                              
+    """
+    print(Fore.CYAN + Style.BRIGHT + title + Style.RESET_ALL)
+
+
+
+
 def display_ascii(animal):
      ascii_art = {
         "cat": '''
