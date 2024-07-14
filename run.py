@@ -137,10 +137,9 @@ def display_ascii(animal):
                ~--______-~                ~-___-~        
 {Style.RESET_ALL}
         ''',
-        "turtle": f'''
-{Fore.GREEN}
-            ''',
-            "turtule": f'''
+
+            
+        "turtule": f'''
 {Fore.GREEN}
                     __
          .,-;-;-,. /'_\
@@ -151,13 +150,7 @@ def display_ascii(animal):
 {Style.RESET_ALL} 
         ''', 
         "lizard": f'''  
-{Fore.READ} 
-
-                            
-     
- 
-        ''',
-        "lizard": '''
+{Fore.RED} 
               ____...---...___
 ___.....---"""        .       ""--..____
      .                  .            .
@@ -174,13 +167,9 @@ ___.....---"""        .       ""--..____
           |/\/\|    |/\/\|
           
 {Style.RESET_ALL}
-        ''',
-        
-        "frog": f '''
+        ''',      
+        "frog": f'''
 {Fore.GREEN}
-        
-
-        
          o  o   o  o
          |\ / \^/ \|
          |,-------.|
@@ -198,7 +187,8 @@ ___.....---"""        .       ""--..____
 {Style.RESET_ALL}
         '''
     } 
-print(ascii_art[animal])
+    
+    print(ascii_art[animal])
 
 def ask_question(question, choices):
     """
