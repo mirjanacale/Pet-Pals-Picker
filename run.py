@@ -136,7 +136,7 @@ def display_ascii(animal):
                ~--______-~                ~-___-~        
 {Style.RESET_ALL}
         ''',  
-        "turtule": f'''
+        "turtle": f'''
 {Fore.GREEN}
                     __
          .,-;-;-,. /'_\
