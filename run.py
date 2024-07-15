@@ -32,7 +32,7 @@ def display_ascii(animal):
  \ \ ,  /      |
   || |-_\__   /
  ((_/`(____,-'      
-{Fore.RESIT_ALL}
+{Style.RESET_ALL}
         ''',
         "dog": f'''
 {Fore.RED}
@@ -42,7 +42,7 @@ def display_ascii(animal):
  /         O
  /   (_____
 /_____/   U 
-{Style.RESIT_ALL}
+{Style.RESET_ALL}
         ''',
         "fish": F'''
 {Fore.CYAN}
@@ -60,7 +60,7 @@ def display_ascii(animal):
           \_ (      _/
             |  |___/
            /__/        
-{Style.REST_ALL}
+{Style.RESET_ALL}
  
         ''',
         "bird": f'''
