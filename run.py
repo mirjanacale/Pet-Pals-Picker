@@ -111,10 +111,9 @@ def display_ascii(animal):
        )\ ))__ _\    |___)
       nn-nn`  `nn---'  
             
-{Style.RESET_ALL}        
-        
-        
+{Style.RESET_ALL}          
         ''',
+        
         "snake": f'''
 {Fore.YELLOW}
         
@@ -123,7 +122,7 @@ def display_ascii(animal):
 \/     /~     \_/ |
  \____|__________/  |
         \_______      |
-                `\     \                 |
+                 \     \                 |
                   |     |                  |
                  /      /                    |
                 /     /                       ||
@@ -136,32 +135,31 @@ def display_ascii(animal):
             ~-_           _-~          ~-_       _-~
                ~--______-~                ~-___-~        
 {Style.RESET_ALL}
-        ''',
-
-            
+        ''',  
         "turtule": f'''
 {Fore.GREEN}
                     __
          .,-;-;-,. /'_\
        _/_/_/_|_\_\) /
      '-<_><_><_><_>=/\
-      `/_/====/_/-'\_\
+       /_/====/_/-'\_\
         ""     ""    ""        
 {Style.RESET_ALL} 
         ''', 
         "lizard": f'''  
 {Fore.RED} 
+
               ____...---...___
 ___.....---"""        .       ""--..____
      .                  .            .
  .             _.--._       /|
-        .    .'()..()`.    / /
-            ( `-.__.-' )  ( (    .
+        .    .'()..() .    / /
+            ( -.__.-' )  ( (    .
    .         \        /    \ /
        .      \      /      ) )        .
             .' -.__.- `.-.-'_.'
  .        .'  /-____-\  `.-'       .
-          \  /-.____.-\  /-.
+          \  /-.____.- '  / .
            \ \`-.__.-'/ /\|\|           .
           .'  `.    .'  `.
           |/\/\|    |/\/\|
@@ -181,15 +179,13 @@ ___.....---"""        .       ""--..____
     \  | ||       || |  /
      \ | /|\     /|\ | /
      /  \-._     _,-/  /
-    //| \\  `---'  // |\\
+    //| \   ---'  // | \ 
    /,-.,-.\       /,-.,-./
   o   o   o      o   o    o        
 {Style.RESET_ALL}
         '''
     } 
-    
     print(ascii_art[animal])
-
 def ask_question(question, choices):
     """
     Asks a question to the user and returns their choice.
@@ -209,11 +205,9 @@ def ask_question(question, choices):
         print(f"{idx}. {choice}")
 
     
-    answer = int(input("Choose an option: "))
-
+    answer = int(input("Choose an option:\n"))
+    
     return choices[answer - 1]
-
-
 
 def find_animal():
     answers = []
@@ -289,9 +283,6 @@ def main():
     else:
         # If no suitable animal is found, display the description
         print(description)
-        
-        
-
 # Run the main function
 if __name__ == "__main__":
     main()
