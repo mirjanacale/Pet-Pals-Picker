@@ -35,7 +35,7 @@ def display_ascii(animal):
 /_____/   U 
 {Style.RESET_ALL}
         ''',
-        "fish": F'''
+        "fish": f'''
 {Fore.CYAN}
        o                 o
                   o
@@ -65,7 +65,7 @@ def display_ascii(animal):
 ===m""m===  
 {Style.RESET_ALL}      
         ''',
-        "rabbit": F'''
+        "rabbit": f'''
 {Fore.GREEN}
     / _ |
    | / \ |
