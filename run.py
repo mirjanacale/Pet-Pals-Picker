@@ -2,23 +2,19 @@ import colorama
 from colorama import Fore, Style
 
 colorama.init(autoreset=True)
-
 # Function to display the title in ASCII art with color
 def display_title():
     title = """
   ___     _     ___      _      ___ _    _            
  | _ \___| |_  | _ \__ _| |___ | _ (_)__| |_____ _ _  
  |  _/ -_)  _| |  _/ _` | (_-< |  _/ / _| / / -_) '_| 
- |_| \___|\__| |_| \__,_|_/__/ |_| |_\__|_\_\___|_|   
-                                                                                                                                                              
+ |_| \___|\__| |_| \__,_|_/__/ |_| |_\__|_\_\___|_|                                                                                                                                                             
     """
     print(Fore.CYAN + Style.BRIGHT + title + Style.RESET_ALL)
-    
 def display_ascii(animal):
     ascii_art = {
         "cat": f'''
 {Fore.YELLOW} 
-   
  /|_,-~/|
  / _  _ |    ,--.
 (  @  @ )   / ,-'
@@ -31,8 +27,7 @@ def display_ascii(animal):
 {Style.RESET_ALL}
         ''',
         "dog": f'''
-{Fore.RED}
-        
+{Fore.RED}        
  / \__
 (    @\___
  /         O
@@ -42,7 +37,6 @@ def display_ascii(animal):
         ''',
         "fish": F'''
 {Fore.CYAN}
-        
        o                 o
                   o
          o   ______      o
@@ -70,12 +64,9 @@ def display_ascii(animal):
    \  / 
 ===m""m===  
 {Style.RESET_ALL}      
- 
         ''',
         "rabbit": F'''
 {Fore.GREEN}
-        
-  / |
     / _ |
    | / \ |
    ||   || _______
@@ -99,20 +90,16 @@ def display_ascii(animal):
 {Style.RESET_ALL}        
         ''',
       "hamster": f'''
-        
 {Fore.MAGENTA}
      (q\_/p)
       /. .\.-""""-.      ___
      =\_t_/=    /  `\   (
        )\ ))__ _\    |___)
       nn-nn`  `nn---'  
-            
 {Style.RESET_ALL}          
         ''',
-        
-        "snake": f'''
+      "snake": f'''
 {Fore.YELLOW}
-        
            /^\/^|
          _|__|  O|
 \/     /~     \_/ |
@@ -144,7 +131,6 @@ def display_ascii(animal):
         ''', 
         "lizard": f'''  
 {Fore.RED} 
-
               ____...---...___
 ___.....---"""        .       ""--..____
      .                  .            .
@@ -189,18 +175,15 @@ def ask_question(question, choices):
     Args:
         question (str): The question to ask the user.
         choices (List[str]): The list of possible choices for the user.
-
     Returns:
         str: The chosen option from the list of choices.
     """
-    
     print(question)
-
     # Loop through the choices and print them with an index
     for idx, choice in enumerate(choices, 1):
+        
         print(f"{idx}. {choice}")
-
-    
+        
     answer = int(input("Choose an option:\n"))
     
     return choices[answer - 1]
@@ -220,13 +203,11 @@ def find_animal():
         ("Do you want a pet that has a long lifespan?", ["Yes", "No"]),
         ("Would you prefer a pet that is most active during the day, or at night?", ["Day", "Night"])
     ]
-
     for question, choices in questions:
         answer = ask_question(question, choices)
         answers.append(answer)
-         # return the answers ( map answers to specific pets)
-         
-   # Decision logic based on user answers
+    
+         # Decision logic based on user answers
     if answers[0] == "Small" and answers[1] == "A few minutes":
         if answers[2] == "Quiet":
             if answers[6] == "Yes":
