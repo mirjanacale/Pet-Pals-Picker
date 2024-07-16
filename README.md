@@ -27,6 +27,8 @@ To run the script, simply execute the `animal_adoption_quiz.py` file in your Pyt
 
 Here is an example output of the quiz:
 
+![example_output](example_output.png)
+
 ### Python Libraries 
 - [Text to ASCII Art](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) -  Used to display colored text.
 - [ASCII](https://www.asciiart.eu/image-to-ascii) - Used to display ASCII art.
