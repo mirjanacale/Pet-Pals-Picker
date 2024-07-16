@@ -213,16 +213,16 @@ def find_animal():
     answers = []
 
     questions = [
-        ("How much room in your house is physically set aside for a pet? Think about how big your living space is?", ["Small", "Medium", "Large"]),
-        ("How much time can you actually dedicate to your pet's daily care and interaction?", ["A few minutes", "A few hours", "All day"]),
+        ("Which pet size do you prefer?", ["Small", "Medium", "Large"]),
+        ("How much time can you actually dedicate to your pet's ?", ["A few minutes", "A few hours", "All day"]),
         ("Which type of pet would you rather have—one,Consider how much noise you can handle?", ["Quiet", "Vocal"]),
-        ("How much room in your house is physically set aside for a pet? Consider the size of your living space?", ["A small space", "A medium space", "A large space"]),
+        ("How much room in your house is physically set aside for a pet?", ["A small space", "A medium space", "A large space"]),
         ("Are you looking for a pet that requires minimal effort to care for?", ["Yes", "No"]),
-        ("Which would you prefer—a pet that is free to roam your living area or in the cage?", ["Cage", "Free"]),
-        ("Are you willing to regularly clean up after your pet, cleaning cages, and picking up waste?", ["Yes", "No"]),
-        ("Do you think it's important that your pet learn tricks, obey commands, or adopt certain behaviors?", ["Yes", "No"]),
-        ("Do you want a pet that has a long lifespan, or are you looking for a shorter-term commitment?", ["Yes", "No"]),
-        ("Would you prefer a pet that is most active during the day, or one that is more active at night?", ["Day", "Night"])
+        ("Which would you prefer—a pet that is free, or in the cage?", ["Cage", "Free"]),
+        ("Are you willing to regularly clean up after your pet?", ["Yes", "No"]),
+        ("Do you think it's important that your pet learn tricks?", ["Yes", "No"]),
+        ("Do you want a pet that has a long lifespan?", ["Yes", "No"]),
+        ("Would you prefer a pet that is most active during the day, or at night?", ["Day", "Night"])
     ]
 
     for question, choices in questions:
