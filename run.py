@@ -213,16 +213,16 @@ def find_animal():
     answers = []
 
     questions = [
-        ("How much room in your house is physically set aside for a pet? Think about how big your living space is, if you have a yard, and what other spaces your pet might use.Which pet size do you prefer?", ["Small", "Medium", "Large"]),
-        ("How much time can you actually dedicate to your pet's daily care and interaction? When responding, take into account your work schedule, social obligations, and personal downtime?", ["A few minutes", "A few hours", "All day"]),
-        ("Which type of pet would you rather have—one that is bubbly and lively all the time, or one that is more reserved and quiet? Consider how much noise you can handle and how it might impact your home.", ["Quiet", "Vocal"]),
-        ("How much room in your house is physically set aside for a pet? Consider the size of your living space, your yard's size, and any additional spaces the pet might use?", ["A small space", "A medium space", "A large space"]),
-        ("Are you looking for a pet that requires minimal effort to care for, or are you prepared to invest significant time and effort into its care and maintenance?", ["Yes", "No"]),
-        ("Which would you prefer—a pet that is free to roam your living area or one that is housed in a cage or other enclosure? Take into account your comfort level and any safety issues?", ["Cage", "Free"]),
-        ("Are you willing to regularly clean up after your pet, including tasks such as litter box maintenance, cleaning cages, and picking up waste?", ["Yes", "No"]),
-        ("Do you think it's important that your pet learn tricks, obey commands, or adopt certain behaviors? Consider the amount of time and energy you are prepared to devote to your training?", ["Yes", "No"]),
-        ("Do you want a pet that has a long lifespan, potentially providing many years of companionship, or are you looking for a shorter-term commitment?", ["Yes", "No"]),
-        ("Would you prefer a pet that is most active during the day when you are likely to be awake and available to interact, or one that is more active at night?", ["Day", "Night"])
+        ("How much room in your house is physically set aside for a pet? Think about how big your living space is?", ["Small", "Medium", "Large"]),
+        ("How much time can you actually dedicate to your pet's daily care and interaction?", ["A few minutes", "A few hours", "All day"]),
+        ("Which type of pet would you rather have—one,Consider how much noise you can handle?", ["Quiet", "Vocal"]),
+        ("How much room in your house is physically set aside for a pet? Consider the size of your living space?", ["A small space", "A medium space", "A large space"]),
+        ("Are you looking for a pet that requires minimal effort to care for?", ["Yes", "No"]),
+        ("Which would you prefer—a pet that is free to roam your living area or in the cage?", ["Cage", "Free"]),
+        ("Are you willing to regularly clean up after your pet, cleaning cages, and picking up waste?", ["Yes", "No"]),
+        ("Do you think it's important that your pet learn tricks, obey commands, or adopt certain behaviors?", ["Yes", "No"]),
+        ("Do you want a pet that has a long lifespan, or are you looking for a shorter-term commitment?", ["Yes", "No"]),
+        ("Would you prefer a pet that is most active during the day, or one that is more active at night?", ["Day", "Night"])
     ]
 
     for question, choices in questions:
