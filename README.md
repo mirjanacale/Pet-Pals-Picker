@@ -1,32 +1,126 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Pet Pals Picker
 
-Welcome,
+This is a Python-based interactive quiz that helps users find the best pet for them based on their preferences.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+## How to Use
 
-## Reminders
+1. **Run the Script**: Run the `animal_adoption_quiz.py` script in your Python environment.
+2. **Answer the Questions**: The quiz will ask you a series of questions about your preferences for a pet.
+3. **Get Your Result**: Based on your answers, the quiz will recommend the best pet for you and display an ASCII art representation of the pet.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Features
 
-## Creating the Heroku app
+- **Interactive Quiz**: The quiz asks a series of questions to determine the best pet for the user.
+- **ASCII Art**: The quiz displays ASCII art representations of the recommended pets.
+- **Pet Recommendations**: The quiz provides a description of why the recommended pet is suitable for the user.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Requirements
 
-1. `heroku/python`
-2. `heroku/nodejs`
+- **Python**: The script requires Python to be installed on your system.
+- **Colorama Module**: The script uses the Colorama module to display colored text. You can install it using pip: `pip install colorama`.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Running the Script
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+To run the script, simply execute the `animal_adoption_quiz.py` file in your Python environment.
 
-Connect your GitHub repository and deploy as normal.
+## Example Output
 
-## Constraints
+Here is an example output of the quiz:
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### Python Libraries 
+- [Text to ASCII Art](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) -  Used to display colored text.
+- [ASCII](https://www.asciiart.eu/image-to-ascii) - Used to display ASCII art.
 
----
 
-Happy coding!
+
+## Technologies Used
+
+### Languages, Frameworks, Libraries & Programs Used
+- [Code Institute Template](https://github.com/Code-Institute-Org/p3-template) used as a foundation for the project's frontend development.
+- [Python](https://www.python.org/) was the primary programming language used to develap the Pet Pals Picker.
+- [GitPod](https://www.gitpod.io/) was utilized for developing and testing the project within a cloud-based environment.
+- [Visual Studio Code](https://code.visualstudio.com/) served as the integrated development environment (IDE) for writing and editing code.
+- [GitHub](http://github.com) was used for hosting the project's code repository.
+- [Heroku](http://heroku.com) was used for deploying the Pet Pals Picker game, allowing it to be accessible and playable online through a web browser.
+
+## Deployment
+This project utilizes [Heroku](http://heroku.com) , for deployment, allowing developers to build, run, and manage applications in the cloud.
+Follow these steps to deploy the Snake Game on Heroku:
+
+1. Create a New Heroku App
+- Log in to Heroku or sign up for a new account.
+- Navigate to your Heroku dashboard and click on the "New" button.
+- Select "Create new app" from the dropdown menu.
+- Choose a unique name for your app, select a region (EU or USA), and click "Create app".
+2. Configure Environment Variables
+- In your app's settings, navigate to the "Config Vars" section.
+- Click on "Reveal Config Vars" and add the following variables:
+  - PORT: Set the value to 8000.
+  - Any other confidential credentials or configuration settings required by the game.
+3. Add Buildpacks
+- In the "Buildpacks" section, add the following buildpacks in the specified order:
+  - Python
+  - Node.js
+4. Prepare Required Files
+- Ensure your project includes the following files:
+  - requirements.txt: Contains the project's Python dependencies.
+  - Procfile: Specifies the commands to run the app.
+5. Connect GitHub Repository
+
+- Under the "Deploy" tab, select "GitHub" as the deployment method.
+- Connect your GitHub repository to the Heroku app.
+- Enable automatic deploys for continuous deployment.
+6. Deploy Your App
+- Trigger a manual deployment by clicking "Deploy Branch" or wait for automatic deployments to occur.
+- Once deployed successfully, your Snake Game will be accessible via the provided Heroku URL.
+
+
+
+
+## Deployment
+
+The site was deployed to GitHub Pages. The steps to deploy are as follows:
+
+- In the [GitHub repository](https://mirjanacale.github.io/eye-breaker/), navigate to the Settings tab
+- From the source section drop-down menu, select the **Main** Branch, then click "Save".
+- The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found [here](https://mirjanacale.github.io/eye-breaker/)
+
+### Local Deployment
+
+This project can be cloned or forked in order to make a local copy on your own system.
+
+#### Cloning
+
+You can clone the repository by following these steps:
+
+1. Go to the [GitHub repository](https://mirjanacale.github.io/eye-breaker/)
+2. Locate the Code button above the list of files and click it
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash or Terminal
+5. Change the current working directory to the one where you want the cloned directory
+6. In your IDE Terminal, type the following command to clone my repository:
+   - `git clone https://github.com/mirjanacale/eye-breaker.git`
+7. Press Enter to create your local clone.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mirjanacale/eye-breaker/)
+
+Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
+A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+
+#### Forking
+
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
+You can fork this repository by using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://mirjanacale.github.io/eye-breaker/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+
+### Local VS Deployment
+
+There are no major differences between the local (Gitpod) version and the deployed (GitHub Pages) version that I'm aware of.
+
