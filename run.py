@@ -2,6 +2,7 @@ import colorama
 from colorama import Fore, Style
 
 colorama.init(autoreset=True)
+quit
 # Function to display the title in ASCII art with color
 def display_title():
     title = """
@@ -122,10 +123,10 @@ def display_ascii(animal):
         "turtle": f'''
 {Fore.GREEN}
                     __
-         .,-;-;-,. /'_\
+         .,-;-;-,. /'_/
        _/_/_/_|_\_\) /
-     '-<_><_><_><_>=/\
-       /_/====/_/-'\_\
+     '-<_><_><_><_>=/|
+       /_/====/_/-'\_|
         ""     ""    ""        
 {Style.RESET_ALL} 
         ''', 
@@ -193,15 +194,15 @@ def find_animal():
 
     questions = [
         ("Which pet size do you prefer?", ["Small", "Medium", "Large"]),
-        ("How much time can you actually dedicate to your pet's ?", ["A few minutes", "A few hours", "All day"]),
-        ("Which type of pet would you rather have—one,Consider how much noise you can handle?", ["Quiet", "Vocal"]),
-        ("How much room in your house is physically set aside for a pet?", ["A small space", "A medium space", "A large space"]),
+        ("How much time can you give to your pet's?", ["A few minutes", "A few hours", "All day"]),
+        ("Which type of pet would you rather have?", ["Quiet", "Vocal"]),
+        ("How much space do you think your pet needs?", ["A small space", "A medium space", "A large space"]),
         ("Are you looking for a pet that requires minimal effort to care for?", ["Yes", "No"]),
-        ("Which would you prefer—a pet that is free, or in the cage?", ["Cage", "Free"]),
+        ("Which would you prefer a pet that is free, or in the cage?", ["Cage", "Free"]),
         ("Are you willing to regularly clean up after your pet?", ["Yes", "No"]),
         ("Do you think it's important that your pet learn tricks?", ["Yes", "No"]),
         ("Do you want a pet that has a long lifespan?", ["Yes", "No"]),
-        ("Would you prefer a pet that is most active during the day, or at night?", ["Day", "Night"])
+        ("Would you prefer a pet that is active during the day, or at night?", ["Day", "Night"])
     ]
     for question, choices in questions:
         answer = ask_question(question, choices)
