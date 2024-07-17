@@ -258,6 +258,7 @@ def display_title():
  |_| \___|\__| |_| \__,_|_/__/ |_| |_\__|_\_\___|_|                                                                                                                                                             
     """
     print(Fore.CYAN + Style.BRIGHT + title + Style.RESET_ALL)
+    print(f"Welcome to the Pet Pals Picker!{Style.RESET_ALL}")
         
 def main():
     """
@@ -273,7 +274,7 @@ def main():
 
     # If an animal is found, display it and its description
     if animal:
-        print(f"Welcome to the Pet Pals Picker!{Style.RESET_ALL}")
+       # print(f"Welcome to the Pet Pals Picker!{Style.RESET_ALL}")
         print(f"The best animal for you is a {animal}!")
         print(description)
         # Display ASCII art of the animal
