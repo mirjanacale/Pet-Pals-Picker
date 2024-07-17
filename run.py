@@ -273,7 +273,7 @@ def main():
 
     # If an animal is found, display it and its description
     if animal:
-        print(f"Welcome to the Pet Pals Picker!{animal}")
+        print(f"Welcome to the Pet Pals Picker!{Style.RESET_ALL}")
         print(f"The best animal for you is a {animal}!")
         print(description)
         # Display ASCII art of the animal
@@ -294,10 +294,6 @@ if __name__ == "__main__":
     
     
     
-    
-# answers = find_animal()
-# print(answers)
-# print(display_ascii("cat"))
-# print(display_ascii("snake"))
+
 
 
