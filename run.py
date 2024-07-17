@@ -185,10 +185,17 @@ def ask_question(question, choices):
         
         print(f"{idx}. {choice}")
         
-    answer = int(input("Choose an option:\n"))
-    
-    return choices[answer - 1]
+    while True:
+        try:
+            answer = int(input("Choose an option by entering the corresponding number:\n"))
+            if 1 <= answer <= len(choices):
+                return choices[answer - 1]
+            else:
+                print(f"Please enter a number between 1 and {len(choices)}.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
 
+        
 def find_animal():
     answers = []
 
