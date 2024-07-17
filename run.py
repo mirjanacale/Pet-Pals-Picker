@@ -5,7 +5,7 @@ colorama.init(autoreset=True)
 quit
 # Function to display the title in ASCII art with color
 def display_title():
-    title = """
+    title = r"""
   ___     _     ___      _      ___ _    _            
  | _ \___| |_  | _ \__ _| |___ | _ (_)__| |_____ _ _  
  |  _/ -_)  _| |  _/ _` | (_-< |  _/ / _| / / -_) '_| 
@@ -14,7 +14,7 @@ def display_title():
     print(Fore.CYAN + Style.BRIGHT + title + Style.RESET_ALL)
 def display_ascii(animal):
     ascii_art = {
-        "cat": f'''
+        "cat": rf'''
 {Fore.YELLOW} 
  /|_,-~/|
  / _  _ |    ,--.
@@ -27,7 +27,7 @@ def display_ascii(animal):
  ((_/`(____,-'      
 {Style.RESET_ALL}
         ''',
-        "dog": f'''
+        "dog": rf'''
 {Fore.RED}        
  / \__
 (    @\___
@@ -36,7 +36,7 @@ def display_ascii(animal):
 /_____/   U 
 {Style.RESET_ALL}
         ''',
-        "fish": f'''
+        "fish": rf'''
 {Fore.CYAN}
        o                 o
                   o
@@ -54,7 +54,7 @@ def display_ascii(animal):
 {Style.RESET_ALL}
  
         ''',
-        "bird": f'''
+        "bird": rf'''
 {Fore.BLUE}
    (
   `-`-.
@@ -66,7 +66,7 @@ def display_ascii(animal):
 ===m""m===  
 {Style.RESET_ALL}      
         ''',
-        "rabbit": f'''
+        "rabbit": rf'''
 {Fore.GREEN}
     / _ |
    | / \ |
@@ -90,7 +90,7 @@ def display_ascii(animal):
        |     |        
 {Style.RESET_ALL}        
         ''',
-      "hamster": f'''
+      "hamster": rf'''
 {Fore.MAGENTA}
      (q\_/p)
       /. .\.-""""-.      ___
@@ -99,7 +99,7 @@ def display_ascii(animal):
       nn-nn`  `nn---'  
 {Style.RESET_ALL}          
         ''',
-      "snake": f'''
+      "snake": rf'''
 {Fore.YELLOW}
            /^\/^|
          _|__|  O|
@@ -120,7 +120,7 @@ def display_ascii(animal):
                ~--______-~                ~-___-~        
 {Style.RESET_ALL}
         ''',  
-        "turtle": f'''
+        "turtle": rf'''
 {Fore.GREEN}
                     __
          .,-;-;-,. /'_/
@@ -130,7 +130,7 @@ def display_ascii(animal):
         ""     ""    ""        
 {Style.RESET_ALL} 
         ''', 
-        "lizard": f'''  
+        "lizard": rf'''  
 {Fore.RED} 
               ____...---...___
 ___.....---"""        .       ""--..____
@@ -149,7 +149,7 @@ ___.....---"""        .       ""--..____
           
 {Style.RESET_ALL}
         ''',      
-        "frog": f'''
+        "frog": rf'''
 {Fore.GREEN}
          o  o   o  o
          |\ / \^/ \|
