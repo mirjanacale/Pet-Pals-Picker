@@ -187,7 +187,7 @@ def ask_question(question, choices):
         
     while True:
         try:
-            answer = int(input("Choose an option by entering the corresponding number:\n"))
+            answer = int(input(" Please enter a valid number:\n"))
             if 1 <= answer <= len(choices):
                 return choices[answer - 1]
             else:
@@ -200,16 +200,26 @@ def find_animal():
     answers = []
 
     questions = [
-        ("Which pet size do you prefer?", ["Small", "Medium", "Large"]),
-        ("How much time can you give to your pet's?", ["A few minutes", "A few hours", "All day"]),
-        ("Which type of pet would you rather have?", ["Quiet", "Vocal"]),
-        ("How much space do you think your pet needs?", ["A small space", "A medium space", "A large space"]),
-        ("Are you looking for a pet that requires minimal effort to care for?", ["Yes", "No"]),
-        ("Which would you prefer a pet that is free, or in the cage?", ["Cage", "Free"]),
-        ("Are you willing to regularly clean up after your pet?", ["Yes", "No"]),
-        ("Do you think it's important that your pet learn tricks?", ["Yes", "No"]),
-        ("Do you want a pet that has a long lifespan?", ["Yes", "No"]),
-        ("Would you prefer a pet that is active during the day, or at night?", ["Day", "Night"])
+        ("Which pet size do you prefer?", 
+         ["Small", "Medium", "Large"]),
+        ("How much time can you give to your pet's?", 
+         ["A few minutes", "A few hours", "All day"]),
+        ("Which type of pet would you rather have?", 
+         ["Quiet", "Vocal"]),
+        ("How much space do you think your pet needs?", 
+         ["A small space", "A medium space", "A large space"]),
+        ("Are you looking for a pet that requires minimal effort to care for?",
+         ["Yes", "No"]),
+        ("Which would you prefer a pet that is free, or in the cage?", 
+         ["Cage", "Free"]),
+        ("Are you willing to regularly clean up after your pet?", 
+         ["Yes", "No"]),
+        ("Do you think it's important that your pet learn tricks?",
+         ["Yes", "No"]),
+        ("Do you want a pet that has a long lifespan?",
+         ["Yes", "No"]),
+        ("Would you prefer a pet that is active during the day, or at night?",
+         ["Day", "Night"])
     ]
     for question, choices in questions:
         answer = ask_question(question, choices)
@@ -219,17 +229,17 @@ def find_animal():
     if answers[0] == "Small" and answers[1] == "A few minutes":
         if answers[2] == "Quiet":
             if answers[6] == "Yes":
-                return "fish", "A fish can be a great pet if you prefer a quiet, low-maintenance companion."
+                return "fish", "A fish can be a great pet if you prefer a quiet."
             else:
                 return "frog", "A frog is a good choice for a quiet and minimal care pet."
         else:
-            return "bird", "A bird can be a lively companion in a small space."
+            return "bird", "A bird can be a lively in a small space."
     elif answers[0] == "Small" and answers[1] == "A few hours":
         if answers[3] == "A small space":
             if answers[7] == "Yes":
                 return "hamster", "A hamster is a small, low-maintenance pet that can provide entertainment."
             else:
-                return "rabbit", "A rabbit can be a gentle pet if you have a bit more space and time."
+                return "rabbit", "A rabbit can be a good pet if you have a bit more space."
         else:
             return "lizard", "A lizard is a good choice for a small space and moderate care needs."
     elif answers[0] == "Medium":
