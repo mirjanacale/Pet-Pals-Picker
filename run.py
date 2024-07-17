@@ -2,16 +2,7 @@ import colorama
 from colorama import Fore, Style
 
 colorama.init(autoreset=True)
-quit
-# Function to display the title in ASCII art with color
-def display_title():
-    title = r"""
-  ___     _     ___      _      ___ _    _            
- | _ \___| |_  | _ \__ _| |___ | _ (_)__| |_____ _ _  
- |  _/ -_)  _| |  _/ _` | (_-< |  _/ / _| / / -_) '_| 
- |_| \___|\__| |_| \__,_|_/__/ |_| |_\__|_\_\___|_|                                                                                                                                                             
-    """
-    print(Fore.CYAN + Style.BRIGHT + title + Style.RESET_ALL)
+
 def display_ascii(animal):
     ascii_art = {
         "cat": rf'''
@@ -254,30 +245,44 @@ def find_animal():
             else:
                 return "turtle", "A turtle is small and good pet."
         else:
-            return None, "Sorry, there's no suitable pet based on your preferences   ."
+            return None, "Sorry,not suitable pet for your choice."
 
-    return None, "Sorry, there's no suitable pet  based on your preferences."
-       
-  
+    return None, "Sorry, not suitable pet for your choice."
+
+# Function to display the title in ASCII art with color
+def display_title():
+    title = r"""
+  ___     _     ___      _      ___ _    _            
+ | _ \___| |_  | _ \__ _| |___ | _ (_)__| |_____ _ _  
+ |  _/ -_)  _| |  _/ _` | (_-< |  _/ / _| / / -_) '_| 
+ |_| \___|\__| |_| \__,_|_/__/ |_| |_\__|_\_\___|_|                                                                                                                                                             
+    """
+    print(Fore.CYAN + Style.BRIGHT + title + Style.RESET_ALL)
+        
 def main():
     """
     The main function that runs the Animal Adoption Quiz.
     """
     # Print welcome message
-    print("Welcome to the Pet Pals Picker!")
+    display_title()
+    
+    
 
     # Find the best animal based on user answers
     animal, description = find_animal()
 
     # If an animal is found, display it and its description
     if animal:
+        print(f"Welcome to the Pet Pals Picker!{animal}")
         print(f"The best animal for you is a {animal}!")
         print(description)
         # Display ASCII art of the animal
         display_ascii(animal)
+        #Display the title
     else:
         # If no suitable animal is found, display the description
         print(description)
+    
 # Run the main function
 if __name__ == "__main__":
     main()
