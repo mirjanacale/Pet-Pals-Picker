@@ -1,7 +1,10 @@
 # Pet Pals Picker
 
+![example_output](images-readme/runprogram.png)
+
 
 This is a Python-based interactive quiz that helps users find the best pet for them based on their preferences.
+
 
 ## How to Use
 
@@ -120,12 +123,42 @@ Else: no suitable pet
 * View ASCIIFart:...an ASCII rendering of the pet you picked
 
 End: Program ends.
+
 ## Flowchart Representation:
 ![example_output](images-readme/flowchart.png)
 
+- Primary Display
+- Greetings of Welcome
+- If "Yes", proceed to Question Screen.
+- If "No", return to Main Screen.
+- Question Matrix
+- Display questions and choices, user submits answers.
+- Analyze responses, repeat until every question has been addressed.
+- Recommendation for Animals
+- Select the best-suited animal and present it.
+- Screen of Results
+- Display an ASCII artwork and an animal description.
+- End Option to return to Main Screen.
+
 ## Testing
+![example_output](images-readme/error hendeling.png)
+
+* The `ask_question' function now includes a `while True' loop to keep
+asking for input until a valid number is entered.
+
+* A `try-except block catches `ValueError exceptions to handle non-
+numeric input.
+
+* If the input is not a number or is out of the valid range, the user is
+prompted to try again.
 
 ## Manual Tests
+![example_output]()
+
+## PEP8 test
+![example_output]()
+
+
 
 ## Deployment
 This project utilizes [Heroku](http://heroku.com) , for deployment, allowing developers to build, run, and manage applications in the cloud.
