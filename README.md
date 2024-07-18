@@ -1,5 +1,6 @@
 # Pet Pals Picker
 
+
 This is a Python-based interactive quiz that helps users find the best pet for them based on their preferences.
 
 ## How to Use
@@ -27,7 +28,7 @@ To run the script, simply execute the `run.py` file in your Python environment.
 
 Here is an example output of the quiz:
 
-![example_output](example_output.png)
+![example_output](images-readme/output.png)
 
 ### Python Libraries 
 - [Text to ASCII Art](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) -  Used to display colored text.
