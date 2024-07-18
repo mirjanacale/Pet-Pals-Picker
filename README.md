@@ -54,15 +54,13 @@ Here is an example output of the quiz:
 - [Youtube](https://www.youtube.com/) - youtube.com for research
 - [Codewof](https://codewof.co.nz/) - codewof.co.nz for checking the PEP8 style
 - [Heroku](https://heroku.com) - heroku.com for deployment
-- Unittest - for testing the code in the terminal
-- Pycodstyle - testing of code style in the terminal
 - [TynyPNG](https://tinypng.com/) - for compressing images
 - [ASCII](https://www.asciiart.eu/image-to-ascii) - used to display ASCII art
 - [Text to ASCII Art](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something) - used to display colored text
 - [Colorama](https://pypi.org/project/colorama/) - used to display colored text
 - [Flask](https://flask.palletsprojects.com/) - used to display ASCII art
 - [Python-Cheat-Sheet](https://overapi.com/python)- used for cheat sheet and learning Python
-- [Perplexity](https://www.perplexity.ai/?login-source=oneTapHome)
+- [Perplexity](https://www.perplexity.ai/?login-source=oneTapHome) - used for researching and learning Python
 
 
 ## Future features:
@@ -169,7 +167,16 @@ numeric input.
 prompted to try again.
 
 ## Manual Tests
-![example_output]()
+
+
+## Fixes for ascii art and title
+
+![example_output](images-readme/invalidescape.png)
+
+- Added 'r prefix for raw strings to the ASCII art strings and the title string to
+make them work in the terminal. This was necessary to handle backslashe correctly.
+- With this correction, the code  resets the style changes properly when displaying
+the ASCII art for the cat.
 
 ## PEP8 test
 ![example_output]()
