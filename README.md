@@ -118,6 +118,8 @@ If small and minimal time:
 
 If quiet: fish or frog
 
+![example_output](images-readme/fish.png)
+
 If vocal: bird
 
 If small and moderate time:
@@ -126,11 +128,15 @@ Small space: Hamster or rabbit
 
 If medium space: lizard
 
+![example_output](images-readme/outputlizard.png)
+
 If medium:
 
 If minimal care: cat
 
 If moderate care: dog
+
+![example_output](images-readme/dog.png)
 
 If large:
 
