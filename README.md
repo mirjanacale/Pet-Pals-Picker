@@ -46,6 +46,12 @@ Here is an example output of the quiz:
 - [GitHub](http://github.com) was used for hosting the project's code repository.
 - [Heroku](http://heroku.com) was used for deploying the Pet Pals Picker game, allowing it to be accessible and playable online through a web browser.
 
+## Future features:
+## Flowchart Steps:
+## Flowchart Representation:
+![example_output](images-readme/flowchart.png)
+
+
 ## Deployment
 This project utilizes [Heroku](http://heroku.com) , for deployment, allowing developers to build, run, and manage applications in the cloud.
 Follow these steps to deploy the Pet Pals Picker game on Heroku:
