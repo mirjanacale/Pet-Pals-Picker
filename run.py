@@ -5,7 +5,7 @@ colorama.init(autoreset=True)
 
 def display_ascii(animal):
     ascii_art = {
-        "cat": f'''
+        "cat": rf'''
 {Fore.YELLOW} 
  /|_,-~/|
  / _  _ |    ,--.
