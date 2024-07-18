@@ -47,10 +47,85 @@ Here is an example output of the quiz:
 - [Heroku](http://heroku.com) was used for deploying the Pet Pals Picker game, allowing it to be accessible and playable online through a web browser.
 
 ## Future features:
+1. Bigger question pool: I plan to include more questions to associate the pet seeking method. Some just are not enough.
+
+2. User profile: a profile for each user will enable them to continue later or save their personal proffered spit of some pet. I currently clear the user input after the recommendation.
+
+3. Care advice: once a person finds the ideal pet, I want to add a tip section where based on their selected pet, the program will locate and show pet care tips.
+
+4. GUI: add graphical user interface or develop a web platform of the program for more engagement. It’ll also allow us to use the database of pet breeds with different images.
+
+5. Space for creative writing and a community forum for pet owner question answering or voluntary sharing of experience.
+
+6. Mobile app. Due to the amount of free time, people spend using their phones, I plan to add a mobile version of the program to use it on the go.
+
+
 ## Flowchart Steps:
+* Begin: The program is loaded.
+
+* Show the ASCII art title and welcome message.
+
+* Interrogative State : Ask the user a set of questions and let him answer, step by step
+
+Q1: Ideal Size of Pet
+
+Question 2: Time to Own the Pet
+
+3: Quiet; Vocal (pet type).
+
+Number 4: Room for the pet
+
+Question 5: Aversion to Low Effort Care
+
+Q6: Cage pet or Free?
+
+Potential 7: How frequently they will ideally clean up
+
+Question 8: Why is it important to learn beat dog tricks?
+
+9- Do you want to live for a long time?
+
+User 10: Day or Night Type of person?
+
+Store Details: [questions => user's answer]
+
+Find a Pet: Take decision logic based on answers to find the best pet
+
+If small and minimal time:
+
+If quiet: fish or frog
+
+If vocal: bird
+
+If small and moderate time:
+
+Small space: Hamster or rabbit
+
+If medium space: lizard
+
+If medium:
+
+If minimal care: cat
+
+If moderate care: dog
+
+If large:
+
+If free: snake or turtle
+
+Else: no suitable pet
+
+* Output: Summary of the most suitable pet to be considered.
+
+* View ASCIIFart:...an ASCII rendering of the pet you picked
+
+End: Program ends.
 ## Flowchart Representation:
 ![example_output](images-readme/flowchart.png)
 
+## Testing
+
+## Manual Tests
 
 ## Deployment
 This project utilizes [Heroku](http://heroku.com) , for deployment, allowing developers to build, run, and manage applications in the cloud.
