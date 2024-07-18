@@ -48,6 +48,22 @@ Here is an example output of the quiz:
 - [Visual Studio Code](https://code.visualstudio.com/) served as the integrated development environment (IDE) for writing and editing code.
 - [GitHub](http://github.com) was used for hosting the project's code repository.
 - [Heroku](http://heroku.com) was used for deploying the Pet Pals Picker game, allowing it to be accessible and playable online through a web browser.
+- [Codeanywear](https://codeanywhere.com/) -  for coding
+- [Grammarly](https://www.grammarly.com/) - grammarly.com for grammar and spelling
+- [W3schools](https://www.w3schools.com/) - w3schools.com for input codes
+- [Youtube](https://www.youtube.com/) - youtube.com for research
+- [Codewof](https://codewof.co.nz/) - codewof.co.nz for checking the PEP8 style
+- [Heroku](https://heroku.com) - heroku.com for deployment
+- Unittest - for testing the code in the terminal
+- Pycodstyle - testing of code style in the terminal
+- [TynyPNG](https://tinypng.com/) - for compressing images
+- [ASCII](https://www.asciiart.eu/image-to-ascii) - used to display ASCII art
+- [Text to ASCII Art](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something) - used to display colored text
+- [Colorama](https://pypi.org/project/colorama/) - used to display colored text
+- [Flask](https://flask.palletsprojects.com/) - used to display ASCII art
+- [Python-Cheat-Sheet](https://overapi.com/python)- used for cheat sheet and learning Python
+- [Perplexity](https://www.perplexity.ai/?login-source=oneTapHome)
+
 
 ## Future features:
 1. Bigger question pool: I plan to include more questions to associate the pet seeking method. Some just are not enough.
@@ -141,7 +157,7 @@ End: Program ends.
 - End Option to return to Main Screen.
 
 ## Testing
-![example_output](images-readme/error hendeling.png)
+![example_output](images-readme/errorhendeling.png)
 
 * The `ask_question' function now includes a `while True' loop to keep
 asking for input until a valid number is entered.
