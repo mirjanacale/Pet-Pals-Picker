@@ -166,7 +166,21 @@ numeric input.
 * If the input is not a number or is out of the valid range, the user is
 prompted to try again.
 
-## Manual Tests
+
+## Manual Testing Documentation
+
+| Test Case ID | Description                      | Steps                          | Expected Result                                          | Actual Result                                           | Status | Comments                 |
+|--------------|----------------------------------|--------------------------------|----------------------------------------------------------|---------------------------------------------------------|--------|--------------------------|
+| TC01         | Initial Setup                    | Launch application             | Main Screen displays with an option to proceed           | Main Screen displayed with an option to proceed         | Pass   |                          |
+| TC02         | Welcome Message (Yes)            | Select "Yes" for welcome       | Welcome Message displayed, proceed to Question Screen    | Welcome Message displayed, proceeded to Question Screen | Pass   |                          |
+| TC03         | Welcome Message (No)             | Select "No" for welcome        | Return to Main Screen                                     | Returned to Main Screen                                 | Pass   |                          |
+| TC04         | Answer Questions                 | Answer all questions           | Questions display sequentially, process answers correctly| Questions displayed sequentially, answers processed     | Pass   |                          |
+| TC05         | Small, Quiet Pet (Fish)          | Provide specific answers       | Recommend a fish                                          | Recommended a fish                                       | Pass   |                          |
+| TC06         | Medium, Vocal Pet (Dog)          | Provide specific answers       | Recommend a dog                                           | Recommended a dog                                        | Pass   |                          |
+| TC07         | Large, Free-Roaming Pet (Snake)  | Provide specific answers       | Recommend a snake                                         | Recommended a snake                                      | Pass   |                          |
+| TC08         | Result Display                   | Complete quiz and view result  | Result screen displays animal, description, and ASCII art | Result screen displayed animal, description, and ASCII art| Pass   |                          |
+| TC09         | End Process                      | Return to Main Screen          | Return to Main Screen without errors                      | Returned to Main Screen without errors                  | Pass   |                          |
+
 
 
 ## Fixes for ascii art and title
@@ -264,3 +278,5 @@ You can fork this repository by using the following steps:
 
 There are no major differences between the local (Gitpod) version and the deployed (GitHub Pages) version that I'm aware of.
 
+## Contributing
+Contributions to the Quiz Game are welcome! If you have suggestions for new questions or improvements to the game, please feel free to open an issue .
