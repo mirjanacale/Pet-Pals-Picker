@@ -3,7 +3,8 @@
 ![example_output](images-readme/runprogram.png)
 
 
-This is a Python-based interactive quiz that helps users find the best pet for them based on their preferences.
+ * This is a Python-based interactive quiz that helps users find the best pet for them based on their preferences.
+Pet Pals Picker is an online quiz that users can take on behalf of someone else to determine which pet might suit them based on their situations and interests. It decouples decisions away from complex decision trees and simply frames it in terms of space, time, and what you like see. Users are provided with customized pet recommendations complete with detailed descriptions and ASCII art to help them determine which type of pet is a good fit. The benefits are time saving, creating safety due to reducing uncertainty and stress around what will make the best pet owner match, making it a fun user experience that helps people have incredible performing engaged fulfilling relationships every step of their way in their journey of being fulfilled male human caretakers.
 
 
 ## How to Use
@@ -36,6 +37,7 @@ Here is an example output of the quiz:
 ### Python Libraries 
 - [Text to ASCII Art](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) -  Used to display colored text.
 - [ASCII](https://www.asciiart.eu/image-to-ascii) - Used to display ASCII art.
+- [Colorama](https://pypi.org/project/colorama/) - used to display colored text
 
 
 
@@ -80,7 +82,11 @@ Here is an example output of the quiz:
 ## Flowchart Steps:
 * Begin: The program is loaded.
 
+![example_output](images-readme/runprogrambutton.png)
+
 * Show the ASCII art title and welcome message.
+
+![example_output](images-readme/titlemassage.png)
 
 * Interrogative State : Ask the user a set of questions and let him answer, step by step
 
